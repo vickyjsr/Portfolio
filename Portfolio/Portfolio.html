@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="Portfolio.css">
+        <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <title>Gourav :) </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" style="color: bisque;background-color:rgb(73, 71, 72);">
+            <nav class="nav bd-grid">
+                <div style="display: flex;">
+                    <a href="Portfolio.html" class="nav__logo"  style="color:#fff;"><b>Gourav</b></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active"   style="color:#fff;">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"   style="color:#fff;">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link"  style="color:#fff;">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link"  style="color:#fff;">College</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"  style="color:#fff;">Contact</a></li>
+                        <li class="nav__item" id="mic-search"><i class='bx bx-search-alt-2'></i><a onclick="searchfunc()" class="nav__link"  style="color:#fff;"> Search</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu' style="color: antiquewhite;"></i>
+                </div>
+            </nav>
+        </header>
+        <div class="searchbox" id="searchbox" style="display: none;">
+            <div class="search-box" >
+                <div class="con">
+                    <span onclick="searchfunc()" class="close row-2" title="Close Modal">&times;</span>
+                <div class="row-2">
+                    <form action="https://www.google.com/search" method="GET" id="search-form" target="_blank">
+                        <input type="text" name="q" placeholder="Google Search..."autocomplete="off" autofocus style="font-size: 78%;" >
+                        <button type="button"><i class='bx bx-microphone'></i></button>
+                    </form>
+                    <p class="info"></p>
+                </div>    
+                </div>
+            </div>
+        </div>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi ;)<br>I'm <span class="home__title-color">Gourav</span><br> Web & App Developer</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="iconandimage">
+                  <div class="home__social" style="display: flex;flex-wrap: wrap;align-items: center;justify-content: center;">
+                    <a href="https://www.linkedin.com/in/gourav-modi-10b3591a1/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/pro_cras_tina_tor/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/vickyjsr" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="GOURAV1.jfif" alt="img">
+                </div>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                      <img src="pic.jpeg" alt="img" style="width: 50%;height:60%;">
+                    </div>
+                    
+                    <div>
+                        <p class="about__text" style="font-family:cursive;">I am currently pursuing Electrical Engineering at National Institute of Technology, Jamshedpur. My interest areas are Development, Coding. I'm looking forward to get placed in an Product Based Company.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills" style="color: antiquewhite;">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <p class="skills__text" >I am trying to improve it.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'  style="color: rgb(245, 121, 121);"></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon' style="color: rgb(26, 144, 184);"></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' style="color: rgb(175, 209, 106);"></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                              <i class='bx bx-code-block skills__icon' style="color: rgb(123, 179, 175);"></i>
+                              <span class="skills__name">Coding</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="lemons.jpg" alt="" class="skills__img" style="margin-left: auto;margin-right: auto;width: 70%;">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">college</h2>
+
+                <div class="work__container bd-grid college">
+                    <div class="work__img">
+                        <img src="logo1nit.png" alt="" style="width:60%;margin: auto;">
+                    </div>
+                    <h4 style="text-align: center; margin: auto;"  class="college_link "><span style="color: rgb(241, 171, 129);font-family:Georgia, 'Times New Roman', Times, serif;"><a href="http://www.nitjsr.ac.in/">National Institute of Technology , Jamshedpur</a></span></h4>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" placeholder="This function will be available soon...." id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div>
+                <p class="footer__title">AniM</p>
+                <p class="footer__title_company">(My Company-Name)</p>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/gourav.modi.798" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/pro_cras_tina_tor/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <div style="pointer-events: none;margin: auto;padding-left: 3%;padding-bottom: 2%;margin-bottom: var(--mb-1);" class="count"><!-- hitwebcounter Code START -->
+                <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=7683788&style=0001&nbdigits=5&type=page&initCount=0" title="Total Website Hits" Alt="Web Hits"   border="0" /></a> </div>
+            <p>&#169; 2020 copyright : all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="Portfolio.js"></script>
+        <script>
+            function change(button) {
+    var x = document.getElementById('showhide');
+    var change = document.getElementById("show_hide_bt");
+
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
+
+    if (change.innerHTML == ' Show')
+           {
+
+               change.innerHTML = ' Hide';
+               $(button).find('i').toggleClass('fa-eye').toggleClass('fa-eye-slash');
+           }
+           else {
+
+               change.innerHTML = ' Show';
+               $(button).find('i').toggleClass('fa-eye-slash').toggleClass('fa-eye');
+           }
+
+
+ }
+        </script>
+        
+        <div class="music"><img src="musicON.svg" width="18%" height="10%" style="padding-left:5%" onclick="musicToggle()" id="onoff"></div>
+        <audio id="myAudio" preload="auto" autoplay ><source src="edm.mp3"></audio>
+            <script>
+        
+            var my_Audio = document.getElementById("myAudio");
+            var on_off = document.getElementById("onoff");
+
+            function musicToggle() { 
+            if (my_Audio.paused) 
+            {
+                my_Audio.play();
+                on_off.src = 'musicOn.svg'
+            }
+            else 
+            {
+                my_Audio.pause(); 
+                on_off.src = 'musicOff1.svg'
+            }
+            } 
+            </script>
+    </body>
+</html>
